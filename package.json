@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "@thirdweb-dev/contracts": "^3.8.0",
+    "@thirdweb-dev/react": "^4.9.4",
+    "@thirdweb-dev/sdk": "^4.0.99",
+    "ethers": "^5.7.2",
     "zksync-ethers": "^5.7.0"
   }
 }
