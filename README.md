@@ -1,59 +1,84 @@
+# MovieMeter 🎬
 
-![tw-banner](https://github.com/thirdweb-example/next-starter/assets/57885104/20c8ce3b-4e55-4f10-ae03-2fe4743a5ee8)
+## Overview
+**MovieMeter** is a decentralized movie rating and voting platform built on the **Celo blockchain**. It allows users to transparently vote **"Yes"** or **"No"** on movies they like, ensuring a fair and tamper-proof voting process.
 
-# thirdweb-next-starter
+Unlike traditional platforms, **MovieMeter** eliminates biased ratings, fake reviews, and manipulation by leveraging smart contracts. Every vote is recorded immutably, providing a transparent and verifiable movie rating system.
 
-Starter template to build an onchain react native app with [thirdweb](https://thirdweb.com/) and [next](https://nextjs.org/).
+## Features 🚀
+- **Decentralized Voting**: Users can vote on movies securely using blockchain technology.
+- **Tamper-proof Ratings**: Votes are recorded on-chain, preventing manipulation.
+- **Community Engagement**: Users can discuss and influence movie ratings in our Telegram community.
+- **Fast and Low-Cost Transactions**: Powered by the Celo blockchain, ensuring efficiency and affordability.
 
-## Installation
+## Why MovieMeter? 🤔
+Traditional movie rating platforms suffer from manipulation, fake reviews, and biased scoring. With **MovieMeter**, we bring:
+- **Transparency** 🏛️: Every vote is verifiable on the blockchain.
+- **Decentralization** 🌍: No single entity controls the voting results.
+- **Fairness** ⚖️: A democratic movie rating system.
 
-Install the template using [thirdweb create](https://portal.thirdweb.com/cli/create)
+Join our larger **Telegram community** to discuss movies and stay updated: [t.me/movies_society](https://t.me/movies_society)
 
+## Tech Stack 🛠️
+- **Blockchain**: Celo Alfajores testnest
+- **Smart Contracts**: Solidity, Thirdweb
+- **Frontend**: React, Next.js, Thirdweb SDK
+- **Backend**: Node.js, Express
+- **Wallet Integration**: Thirdweb SDK, Celo Wallet
+- **Storage**: IPFS (for metadata)
+
+## Getting Started 🚀
+
+### Prerequisites
+Make sure you have the following installed:
+- [Node.js](https://nodejs.org/)
+- [Git](https://git-scm.com/)
+- [Yarn](https://yarnpkg.com/)
+- [Metamask or Celo Wallet](https://valoraapp.com/)
+
+### Installation
+Clone the repository:
 ```bash
-  npx thirdweb create app --next
+  git clone https://github.com/gideonnut/moviemeter.git
+```
+Navigate to the project folder:
+```bash
+  cd moviemeter
+```
+Install dependencies:
+```bash
+  yarn install
 ```
 
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file:
-
-`CLIENT_ID`
-
-To learn how to create a client ID, refer to the [client documentation](https://portal.thirdweb.com/typescript/v5/client). 
-
-## Run locally
-
-Install dependencies
-
+### Running the Project
+#### 1. Start the Smart Contract
 ```bash
-yarn
+  cd smartcontract
+  yarn hardhat node
 ```
-
-Start development server
-
+#### 2. Deploy Contracts
 ```bash
-yarn dev
+  yarn hardhat deploy --network alfajores
 ```
-
-Create a production build
-
+#### 3. Start the Frontend
 ```bash
-yarn build
+  cd frontend
+  yarn dev
 ```
+The application should now be running at `http://localhost:3000/` 🎬
 
-Preview the production build
+## Contributing 🤝
+We welcome contributions! If you'd like to contribute:
+1. Fork the repository
+2. Create a new branch (`feature/new-feature`)
+3. Commit your changes
+4. Push to your branch and create a Pull Request
 
-```bash
-yarn start
-```
+## License 📜
+This project is licensed under the **MIT License**.
 
-## Resources
+## Connect With Us 🌍
+- **Telegram**: [t.me/GideonDern](https://t.me/GideonDern)
+- **Twitter**: [@MovieMeterDapp](https://twitter.com/MovieMeterDapp)
+- **GitHub**: [MovieMeter Repository](https://github.com/gideonnut/moviemeter)
 
-- [Documentation](https://portal.thirdweb.com/typescript/v5)
-- [Templates](https://thirdweb.com/templates)
-- [YouTube](https://www.youtube.com/c/thirdweb)
-- [Blog](https://blog.thirdweb.com)
-
-## Need help?
-
-For help or feedback, please [visit our support site](https://thirdweb.com/support)
